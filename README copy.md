@@ -1,4 +1,4 @@
-# Dungeon and Dragon
+# Progressive Spells
 
 - Find the web view of the project [here](http://dragons-dungeons-spell.s3-website-us-east-1.amazonaws.com)
 

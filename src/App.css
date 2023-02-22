@@ -1,0 +1,180 @@
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0px;
+  position: relative;
+  background-color: #f3f3f3;
+}
+
+a {
+  text-decoration: none;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background: #fff;
+  color: #084375;
+  padding: 16px 20px;
+  position: sticky;
+  top: 0px;
+  z-index: 100;
+  font-size: 13px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+  font-weight: 500;
+  color: #084375;
+  transition: all 0.5s;
+  font-size: 15px;
+}
+
+header a:hover {
+  transition: all 0.5s;
+  opacity: 0.7;
+}
+
+.main-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.title-container {
+  background-color: #08487df7;
+  color: white;
+  padding: 30px 20px;
+  min-height: 55px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.child-wrapper {
+  background: #fff;
+  margin: -25px 20px 30px;
+  padding: 16px 20px;
+  border-radius: 10px;
+  flex: 1;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 16px;
+}
+
+.card {
+  background: #ccdaec;
+  cursor: pointer;
+  min-height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 8px;
+  padding-right: 8px;
+  color: #144e81;
+  border-radius: 10px;
+  text-align: center;
+  transition: all 0.5s;
+  font-size: 13px;
+}
+
+.loader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  min-height: 400px;
+}
+
+.card:hover {
+  opacity: 0.8;
+  transition: all 0.5s;
+}
+
+.details {
+  font-size: 13px;
+  color: #232323;
+}
+
+.details p {
+  white-space: break-spaces;
+}
+
+.sub-description-title {
+  font-weight: 600;
+}
+
+.card-wrapper {
+  position: relative;
+}
+
+.card-wrapper:hover span {
+  opacity: 1;
+}
+
+.card-wrapper > span {
+  position: absolute;
+  z-index: 1;
+  right: 10px;
+  opacity: 0.6;
+  transition: opacity 0.5s;
+  top: 10px;
+  cursor: pointer;
+}
+
+.anticon-heart {
+  color: #144e81;
+}
+
+.anticon-heart-filled {
+  color: #be0404;
+}
+
+.back-nav {
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
+}
+
+.view-all-spells {
+  padding: 10px 20px;
+  background: #08487df7;
+  text-align: center;
+  border-radius: 5px;
+  color: white;
+  margin-top: 4px;
+  margin-bottom: 20px;
+  width: fit-content;
+}
+
+.back-nav-wrapper {
+  padding-bottom: 10px;
+}
+
+@media (max-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 575px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 425px) {
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+}
